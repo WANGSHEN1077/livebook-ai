@@ -1,0 +1,26 @@
+# Xcode / Swift
+DerivedData/
+.build/
+build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+.swiftpm/
+Package.resolved
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# LiveBook runtime data
+*.mp4
+*.mov
+!testdata/**/*.mp4
+!testdata/**/*.mov
