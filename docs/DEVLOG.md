@@ -20,9 +20,9 @@
 - 基准校验模式：0813 全 51 本自动比对
 
 ### 决策记录
-- 回放优先：先用 `/Users/wangshen/Downloads/直播回放-08月13日.mp4` 模拟直播窗口，后续替换为真实直播窗口，管线零改动（同一 FrameSource 抽象）。
+- 回放优先：先用 `~/Documents/livebook-ai/mac-app/LiveBookAI/media/直播回放-08月13日.mp4` 模拟直播窗口，后续替换为真实直播窗口，管线零改动（同一 FrameSource 抽象）。
 - 无 brew/xcodegen：手写 `.xcodeproj`（objectVersion 77 + PBXFileSystemSynchronizedRootGroup）。
-- 基准数据源：`/Users/wangshen/Documents/danmu/0813.csv`（书名）+ `/tmp/sales_0813_timed.json`（no/t_sec/t0）。
+- 基准数据源：`~/Documents/danmu/0813.csv`（书名）+ `/tmp/sales_0813_timed.json`（no/t_sec/t0）。
 
 ### 测试 / 构建结果
 （本阶段执行后填写）

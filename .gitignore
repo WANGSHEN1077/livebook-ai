@@ -18,6 +18,17 @@ Package.resolved
 .env.local
 *.pem
 *.key
+# 本地代码签名钥匙串（绝不提交）
+*.keychain
+
+# 临时/垃圾文件
+.fl3FEDDE2C
+database.sqlite3
+*.profraw
+*.profdata
+
+# 真实买家名单（不入仓库；仓库里只放 buyers.example.json）
+realtime/buyers.json
 
 # LiveBook runtime data
 *.mp4

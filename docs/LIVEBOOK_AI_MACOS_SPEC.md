@@ -1116,4 +1116,4 @@ FrameSource (protocol)
 
 - 回放文件支持：倍速 1x–32x、seek 跳转到任意时刻。
 - 基准校验模式：读取 0813.csv（书名）+ sales_0813_timed.json（no/t_sec）合并为 51 条基准，逐本跳转到起拍时刻跑 OCR 比对，输出命中/未命中清单。
-- 默认回放路径：`/Users/wangshen/Downloads/直播回放-08月13日.mp4`。
+- 默认回放路径：`~/Documents/livebook-ai/mac-app/LiveBookAI/media/直播回放-08月13日.mp4`。
