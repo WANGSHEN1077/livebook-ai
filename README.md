@@ -60,7 +60,8 @@ BlackHole + 扬声器的多输出设备），并授予终端麦克风与屏幕�
 ## Swift 原型（mac-app）
 
 Phase 1 开发的 macOS 应用原型：ScreenCaptureKit 捕获、Vision OCR、
-ISBN 解析、最佳画面评分、0813 基准校验。构建方式：
+ISBN 解析、最佳画面评分、0813 基准校验。工程使用 **ad-hoc 签名**
+（`CODE_SIGN_IDENTITY = -`），无需证书即可本地构建运行：
 
 ```bash
 cd mac-app/LiveBookAI
@@ -70,6 +71,8 @@ xcodebuild -project LiveBookAI.xcodeproj -scheme LiveBookAI test
 
 路径（回放视频 / sherpa 模型 / 基准 CSV）均可用环境变量覆盖：
 `LIVEBOOK_REPLAY`、`LIVEBOOK_ASR_MODEL`、`LIVEBOOK_DANMU_CSV`。
+依赖本机数据（基准 CSV、回放视频）的测试在数据缺失时自动 skip，
+所以克隆仓库后 `test` 直接全绿。
 首次以真实窗口模式运行需授予「屏幕录制」权限。
 
 ## 文档
